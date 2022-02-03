@@ -1,0 +1,54 @@
+@charset 'utf-8';
+
+/*　ボディ */
+body {
+    font-size: 14px;
+    background-color: #bbbbbb;
+}
+
+/* ヘッダー */
+header {
+    width: 30%;
+    text-align: center;
+    padding: 10px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+main section {
+    width: 30%;
+    background-color: #ffffff;
+}
+
+main section #count {
+    font-size: 3em;
+}
+
+.item-wrap {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item-wrap .disp {
+    width: 50px;
+    font-size: 2em;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.item-wrap .input-item {
+    height: 5px;
+}
+
+.item-wrap .input-item::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+}
+
+#btn-wrap input[type="button"] {
+    font-size: 2em;
+}

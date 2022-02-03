@@ -1,0 +1,118 @@
+@charset 'utf-8';
+
+/* リセット */
+body, header,
+main, section,
+div, h1 {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*　ボディ */
+body {
+    font-family: 'DotGothic16', sans-serif;
+    width: 100%;
+}
+
+/* ヘッダー */
+header {
+    color: #f5f5f5;
+    background-color: #009966;
+    text-align: center;
+}
+
+/* メイン */
+main section {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main section #count-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+main section #count {
+    text-align: center;
+}
+
+main section #second {
+    font-size: 2em;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.item-wrap {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+}
+
+.item-wrap label {
+    width: 100%;
+    color: #050505;
+    background-color: #f3f3f3;
+    text-align: center;
+    display: inline-block;
+}
+
+.item-wrap div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-wrap .disp {
+    text-align: right;
+}
+
+.item-wrap .input-item {
+    width: 100%;
+    height: 10px;
+    appearance: none;
+    background-color: #dddddd;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.item-wrap .input-item:focus,
+.item-wrap .input-item:active {
+    outline: none;
+}
+
+.item-wrap .input-item::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #fa007f;
+    border-radius: 50%;
+}
+
+#btn-wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-wrap input[type="button"] {
+    font-family: 'DotGothic16', sans-serif;
+    width: 50%;
+    box-shadow: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: none;
+    appearance: none;
+    border: 0;
+}
+
+#btn-wrap #start {
+    color: #f3f3f3;
+    background-color: #009966;
+}
+
+#btn-wrap #stop {
+    color: #cccccc;
+    background-color: #f3f3f3;
+}

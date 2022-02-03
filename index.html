@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link id="stylesheet" rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/ua.js"></script>
+    <title>ポモドーロ</title>
+</head>
+<body>
+    <header>
+        <h1>ポモドーロ</h1>
+        <audio id="alert" src="audio/alert.mp3"></audio>
+    </header>
+    <main>
+        <section>
+            <div id="count-wrap">
+                <span id="count">0</span><span id="second">秒</span>
+            </div>
+        </section>
+        <section>
+            <!-- 作業時間（分） -->
+            <div id="work" class="item-wrap">
+                <label>作業時間（分）</label>
+                <div>
+                    <span id="work-disp" class="disp">25</span>
+                    <input type="range" id="work-input" class="input-item" max="60" min="5" step="5" value="25">
+                </div>
+            </div>
+            <!-- 休憩時間（分） -->
+            <div id="break" class="item-wrap">
+                <label for="break-input">休憩時間（分）</label>
+                <div>
+                    <span id="break-disp" class="disp">5</span>
+                    <input type="range" id="break-input" class="input-item" max="25" min="5" step="5" value="5">
+                </div>
+            </div>
+            <!-- 作業回数 -->
+            <div id="round" class="item-wrap">
+                <label for="round-input">作業回数</label>
+                <div>
+                    <span id="round-disp" class="disp">4</span>
+                    <input type="range" id="round-input" class="input-item" max="10" min="1" step="1" value="4">
+                </div>
+            </div>
+            <!-- 長い休憩時間（分） -->
+            <div id="longbreak" class="item-wrap">
+                <label for="longbreak-input">長い休憩時間（分）</label>
+                <div>
+                    <span id="longbreak-disp" class="disp">15</span>
+                    <input type="range" id="longbreak-input" class="input-item" max="60" min="10" step="5" value="15">
+                </div>
+            </div>
+            <!-- セット数 -->
+            <div id="set" class="item-wrap">
+                <label for="set-input">セット数</label>
+                <div>
+                    <span id="set-disp" class="disp">4</span>
+                    <input type="range" id="set-input" class="input-item" max="10" min="1" step="1" value="4">
+                </div>
+            </div>
+            <!-- 開始ボタン -->
+            <div id="btn-wrap">
+                <input type="button" id="start" value="開始">
+                <!-- 停止ボタン -->
+                <input type="button" id="stop" value="停止" disabled>
+            </div>
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
