@@ -11,7 +11,8 @@ const countDisplay = function(_time) {
 }
 
 /**
- * カウント
+ * カウントの処理
+ * 1秒ずつ減っていく
  */
 const countTimes = function(_time) {
     countDisplay(_time);
@@ -70,6 +71,7 @@ const pomodoro = async function(_workTime, _breakTime, _round, _longBreakTime, _
     $('#start').prop('disabled', false);
     $('#start').css({'opacity': '1'});
 }
+
 
 /**
  * プログレスバーを移動時
@@ -194,7 +196,9 @@ $('#stop').click( function() {
 });
 
 
-
+/**
+ * 開始ボタンにカーソルを合わせたとき
+ */
 $('#start').hover( function() {
     $(this).css('opacity', '0.5');
 }, function () {
